@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lamps Plus | Lighting, Lamps, Ceiling Fans & Home Decor</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; overflow: hidden; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  }
+
+  .promo {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: .5px;
+    padding: 8px;
+  }
+  .promo b { color: #f5b335; }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 18px 40px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    white-space: nowrap;
+  }
+  .logo span { color: #c8102e; }
+  .search {
+    flex: 1;
+    display: flex;
+    border: 1px solid #999;
+    border-radius: 2px;
+  }
+  .search input {
+    flex: 1;
+    border: 0;
+    padding: 11px 14px;
+    font-size: 14px;
+    outline: none;
+  }
+  .search button {
+    background: #222;
+    color: #fff;
+    border: 0;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  .utils { display: flex; gap: 24px; font-size: 13px; white-space: nowrap; }
+  .utils a { color: #222; text-decoration: none; }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  nav a { color: #222; text-decoration: none; }
+  nav a.sale { color: #c8102e; }
+
+  .hero {
+    flex: 1;
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=2000&q=80") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.1) 60%);
+  }
+  .hero-text { position: relative; color: #fff; max-width: 520px; }
+  .hero-text small { font-size: 14px; letter-spacing: 3px; text-transform: uppercase; }
+  .hero-text h1 {
+    font-family: Georgia, serif;
+    font-size: 56px;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 12px 0 16px;
+  }
+  .hero-text p { font-size: 18px; margin-bottom: 28px; }
+  .hero-text a {
+    display: inline-block;
+    background: #fff;
+    color: #222;
+    padding: 14px 34px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    border-top: 1px solid #e5e5e5;
+  }
+  .tiles div { padding: 16px 0; border-right: 1px solid #e5e5e5; }
+  .tiles div:last-child { border-right: 0; }
+</style>
+</head>
+<body>
+
+  <div class="promo">FREE SHIPPING on orders over $49 &nbsp;|&nbsp; <b>Holiday Sale — Up to 50% Off</b> Lighting & Decor</div>
+
+  <header>
+    <div class="logo">LAMPS <span>PLUS</span></div>
+    <div class="search">
+      <input type="text" placeholder="Search lamps, chandeliers, ceiling fans...">
+      <button>&#128269;</button>
+    </div>
+    <div class="utils">
+      <a href="#">Stores</a>
+      <a href="#">Sign In</a>
+      <a href="#">Favorites</a>
+      <a href="#">Cart (0)</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Lighting</a>
+    <a href="#">Lamps</a>
+    <a href="#">Ceiling Fans</a>
+    <a href="#">Outdoor</a>
+    <a href="#">Furniture</a>
+    <a href="#">Decor</a>
+    <a href="#">Rugs</a>
+    <a href="#">Bath</a>
+    <a href="#" class="sale">Sale</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <small>New Arrivals</small>
+      <h1>Light Up Your Holidays</h1>
+      <p>Designer lamps, chandeliers, and decor for every room.</p>
+      <a href="#">Shop Now</a>
+    </div>
+  </section>
+
+  <div class="tiles">
+    <div>Table Lamps</div>
+    <div>Chandeliers</div>
+    <div>Floor Lamps</div>
+    <div>Pendants</div>
+    <div>Wall Lights</div>
+  </div>
+
+</body>
+</html>
